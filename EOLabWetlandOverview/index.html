@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Scroll Deck</title>
+  <title>EOLab overview</title>
   <style>
     :root{
     /* Bright theme */
@@ -108,7 +108,7 @@
     }
 
     .panel {
-      background: rgba(0,0,0,0.18);
+      background: rgba(0,0,0,0.0);
       border: 1px solid rgba(255,255,255,0.0);
       border-radius: 18px;
       padding: 18px;
@@ -147,6 +147,19 @@
       user-select: none;
     }
 
+    .fixed-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    }
+
+    .img-row {
+    display: flex;
+    gap: 5px;          /* space between images */
+    flex-wrap: nowrap; /* keep on same line */
+    }
+
+
     /* Make it work nicely on small screens */
     @media (max-width: 860px){
       .grid-2 { grid-template-columns: 1fr; }
@@ -161,136 +174,56 @@
 
 <body>
   <main class="deck" aria-label="Scroll-based slide deck">
-    <!-- Slide 1 -->
+
     <section class="slide" aria-label="Slide 1">
       <div class="frame">
         <div class="content">
-          <div class="kicker">Scroll Deck Template</div>
-          <h1>One scroll = one slide</h1>
-          <p>
-            This is a buttonless, PowerPoint-like layout using CSS scroll snapping.
-            Scroll to move between full-screen slides.
-          </p>
-          <div class="tag-row" aria-label="Tags">
-            <span class="tag">Scroll-snap</span>
-            <span class="tag">No controls</span>
-            <span class="tag">Simple & elegant</span>
-          </div>
-        </div>
-      </div>
-      <div class="index">1 / 5</div>
-    </section>
-
-    <!-- Slide 2 -->
-    <section class="slide" aria-label="Slide 2">
-      <div class="frame">
-        <div class="content">
-          <div class="kicker">Agenda</div>
-          <h2>What you can present</h2>
-          <div class="grid-2">
-            <div>
-              <p>
-                Replace these sections with your own content. Keep each slide focused: one message,
-                a few bullets, and a small visual block.
-              </p>
-              <ul>
-                <li>Title + context
-                    <a href="#"> Test</a>
-                </li>
-                <li>Problem / motivation</li>
-                <li>Approach / method</li>
-                <li>Results / metrics</li>
-                <li>Conclusion / next steps</li>
-              </ul>
-            </div>
-            <aside class="panel">
-              <p style="color: rgba(255,255,255,0.82); margin-bottom: 10px;">
-                Tip
-              </p>
-              <p>
-                Aim for ~30–60 words per slide. Let the talk do the rest.
-              </p>
-            </aside>
-          </div>
-        </div>
-      </div>
-      <div class="index">2 / 5</div>
-    </section>
-
-    <!-- Slide 3 -->
-    <section class="slide" aria-label="Slide 3">
-      <div class="frame">
-        <div class="content">
-          <div class="kicker">Section</div>
-          <h2>Use split layouts</h2>
-          <div class="grid-2">
-            <div class="panel">
-              <p style="color: rgba(255,255,255,0.82); margin-bottom: 10px;">Left block</p>
-              <ul>
-                <li>Key point A</li>
-                <li>Key point B</li>
-                <li>Key point C</li>
-              </ul>
-            </div>
-            <div class="panel">
-              <p style="color: rgba(255,255,255,0.82); margin-bottom: 10px;">Right block</p>
-              <p>
-                Put a quote, a mini chart screenshot, a code snippet image, or a small diagram here.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="index">3 / 5</div>
-    </section>
-
-    <!-- Slide 4 -->
-    <section class="slide" aria-label="Slide 4">
-      <div class="frame">
-        <div class="content">
-          <div class="kicker">Highlight</div>
-          <h2>Call out one number</h2>
-          <div class="panel" style="display:grid; gap: 6px;">
-            <div style="font-size: clamp(44px, 6vw, 82px); font-weight: 700; letter-spacing: -0.03em;">
-              42%
-            </div>
-            <p style="max-width: none;">
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
-              Example impact statement goes here. Explain what this number means in one sentence.
+            <div class="kicker">Slide 1</div>
+            <h1>Large-scale spatio-temporal monitoring</h1>
+            <p>
+                Earth Observation and Geoinformation Science Lab 
             </p>
+            <ul>
+                <li>Our Datacube: <a href="https://vudongpham.eu/EOLabDatacubeReport/" target="_blank">Webview</a></li>
+                <li>Deep learning and EO, algorithms developments: 
+                    <a href="https://doi.org/10.1016/j.rse.2024.114206" target="_blank"> [1] </a> |
+                    <a href="https://doi.org/10.1016/j.jag.2024.103867" target="_blank"> [2] </a> |
+                    <a href="https://doi.org/10.1016/j.rse.2026.115251" target="_blank"> [3] </a>
+                </li>
+                <li>Selected large-scale map products
+                    <a href="https://zenodo.org/records/10653871" target="_blank"> BSRLC+ </a> |
+                    <a href="https://zenodo.org/records/17413880" target="_blank"> BSRLC-U </a> 
+                </li>
+            </ul>
+            <img src="src/datacube.gif" style="width: 800px; height: 450px;">
+
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" aria-label="Slide 1">
+      <div class="frame">
+        <div class="content">
+          <div class="kicker">Slide 2</div>
+          <h1>Baltic Sea Region Land Cover <i>Plus</i> - BSRLC+</h1>
+          <p>
+            <ul>
+                <li>Publication: <a href="https://doi.org/10.1038/s41597-024-04062-w" target="_blank"> Link</a></li>
+                <li>Dataset: <a href="https://zenodo.org/records/10653871" target="_blank"> Link</a></li>
+                <li>Web viewer: <a href="https://ifzo-gis.geo.uni-greifswald.de/portal/apps/experiencebuilder/experience/?id=d78718baaa5844aea02e63b855e6b7fc" target="_blank"> Link</a></li>
+            </ul>
+          </p>
+          <div class="img-row">
+            <figure>
+                <img src="src/est_peat_mining.gif"  style="width: 500px; height: 500px;">
+                <figcaption>Two decades of peat mining monitoring (Estonia)</figcaption>
+            </figure>
+            <figure>
+                <img src="src/bsrlc_legend.png" class="fixed-img" alt="A" style="width: 150px; height: 350px;">
+            </figure>
           </div>
         </div>
       </div>
-      <div class="index">4 / 5</div>
-    </section>
-
-    <!-- Slide 5 -->
-    <section class="slide" aria-label="Slide 5">
-      <div class="frame">
-        <div class="content">
-          <div class="kicker">Wrap-up</div>
-          <h2>Conclusion & next steps</h2>
-          <ul>
-            <li>Summary of the main message</li>
-            <li>What you want the audience to remember</li>
-            <li>Next steps / roadmap</li>
-          </ul>
-          <p style="margin-top: 6px;">
-            Add contact info, a link, or a brief thank you line.
-          </p>
-        </div>
-      </div>
-      <div class="index">5 / 5</div>
     </section>
   </main>
 </body>
