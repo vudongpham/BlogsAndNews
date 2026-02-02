@@ -1,11 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EOLab overview</title>
-  <style>
-    :root{
+:root{
     /* Bright theme */
     --bg: #f6f7fb;
     --surface: rgba(255,255,255,0.86);
@@ -95,7 +88,7 @@
     p {
       margin: 0;
       color: var(--muted);
-      font-size: clamp(16px, 1.6vw, 20px);
+      font-size: clamp(25px, 1.6vw, 20px);
       line-height: 1.55;
       max-width: 70ch;
     }
@@ -119,7 +112,7 @@
       padding-left: 1.1em;
       color: var(--muted);
       line-height: 1.6;
-      font-size: clamp(15px, 1.5vw, 18px);
+      font-size: clamp(20px, 1.5vw, 18px);
     }
 
     .tag-row {
@@ -155,7 +148,7 @@
 
     .img-row {
     display: flex;
-    gap: 5px;          /* space between images */
+    gap: 0px;          /* space between images */
     flex-wrap: nowrap; /* keep on same line */
     }
 
@@ -169,62 +162,3 @@
     @media (prefers-reduced-motion: reduce) {
       .deck { scroll-behavior: auto; }
     }
-  </style>
-</head>
-
-<body>
-  <main class="deck" aria-label="Scroll-based slide deck">
-
-    <section class="slide" aria-label="Slide 1">
-      <div class="frame">
-        <div class="content">
-            <div class="kicker">Slide 1</div>
-            <h1>Large-scale spatio-temporal monitoring</h1>
-            <p>
-                Earth Observation and Geoinformation Science Lab 
-            </p>
-            <ul>
-                <li>Our Datacube: <a href="https://vudongpham.eu/EOLabDatacubeReport/" target="_blank">Webview</a></li>
-                <li>Deep learning and EO, algorithms developments: 
-                    <a href="https://doi.org/10.1016/j.rse.2024.114206" target="_blank"> [1] </a> |
-                    <a href="https://doi.org/10.1016/j.jag.2024.103867" target="_blank"> [2] </a> |
-                    <a href="https://doi.org/10.1016/j.rse.2026.115251" target="_blank"> [3] </a>
-                </li>
-                <li>Selected large-scale map products
-                    <a href="https://zenodo.org/records/10653871" target="_blank"> BSRLC+ </a> |
-                    <a href="https://zenodo.org/records/17413880" target="_blank"> BSRLC-U </a> 
-                </li>
-            </ul>
-            <img src="src/datacube.gif" style="width: 800px; height: 450px;">
-
-        </div>
-      </div>
-    </section>
-
-    <section class="slide" aria-label="Slide 1">
-      <div class="frame">
-        <div class="content">
-          <div class="kicker">Slide 2</div>
-          <h1>Baltic Sea Region Land Cover <i>Plus</i> - BSRLC+</h1>
-          <p>
-            <ul>
-                <li>Publication: <a href="https://doi.org/10.1038/s41597-024-04062-w" target="_blank"> Link</a></li>
-                <li>Dataset: <a href="https://zenodo.org/records/10653871" target="_blank"> Link</a></li>
-                <li>Web viewer: <a href="https://ifzo-gis.geo.uni-greifswald.de/portal/apps/experiencebuilder/experience/?id=d78718baaa5844aea02e63b855e6b7fc" target="_blank"> Link</a></li>
-            </ul>
-          </p>
-          <div class="img-row">
-            <figure>
-                <img src="src/est_peat_mining.gif"  style="width: 500px; height: 500px;">
-                <figcaption>Two decades of peat mining monitoring (Estonia)</figcaption>
-            </figure>
-            <figure>
-                <img src="src/bsrlc_legend.png" class="fixed-img" alt="A" style="width: 150px; height: 350px;">
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
