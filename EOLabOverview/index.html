@@ -32,7 +32,7 @@
                     , integrating EO and peatland monitoring.
                 </li>
             </ul>
-            <figure>
+            <figure style="margin-left: auto; margin-right: auto; text-align: center;">
                 <img src="src/force_dc.png"  style="width: 600px; height: 450px;">
                 <figcaption><a href="https://force-eo.readthedocs.io/en/latest/" target="_blank">FORCE datacube</a></figcaption>
             </figure>
@@ -56,7 +56,7 @@
           </p>
           <div class="img-row">
             <figure>
-                <img src="src/bsrlc_overview.png"  style="width: 500px; height: 400px;">
+                <img src="src/bsrlc_overview.jpg"  style="width: 500px; height: 400px;">
                 <figcaption>BSRLC+ product overview</figcaption>
             </figure>
             <figure>
@@ -93,6 +93,123 @@
         </div>
       </div>
     </section>
+
+    <section class="slide" aria-label="Slide 1">
+      <div class="frame">
+        <div class="content">
+          <div class="kicker">Slide 4</div>
+          <h1>(Current work) Mapping 40-year (1985-2024) of wetland vegetation dynamics</h1>
+          <p>
+            <ul>
+              <li>Landsat spectral-temporal metrics, 30-m resolution.</li>
+              <li>Tri-annual maps (1985, 1988, 1991, ..., 2024).</li>
+              <li>Deep learning semantic segmentation.</li>
+            </ul>
+          </p>
+
+          <figure style="margin-left: auto; margin-right: auto; text-align: center;">
+                <img src="src/wet_1.jpg"  style="width: 1000px; height: 500px;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" aria-label="Slide 1">
+      <div class="frame">
+        <div class="content">
+          <div class="kicker">Slide 5</div>
+          <h1>Challenges</h1>
+          <p>
+            <ul>
+              <li>Landsat data quality in the past is not optimal.</li>
+              <li>Training data only exists in recent years.</li>
+              <li>DL models trained with Landsat in recent years, cannot transfer to the past.</li>
+            </ul>
+          </p>
+
+          <figure style="margin-left: auto; margin-right: auto; text-align: center;">
+                <img src="src/wet_2.jpg"  style="width: 1000px; height: 500px;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" aria-label="Slide 1">
+      <div class="frame">
+        <div class="content">
+          <div class="kicker">Slide 6</div>
+          <h1>Solution</h1>
+          <p>
+            <ul>
+              <li>We developed a novel method.</li>
+              <li>We simulated the quality of the "80s" Landsat to the recent Landsat data.</li>
+              <li>By doing this, we can introduce the data variations to the DL models.</li>
+            </ul>
+          </p>
+
+          <figure style="margin-left: auto; margin-right: auto; text-align: center;">
+                <img src="src/wet_3.jpg"  style="width: 1000px; height: 500px;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" aria-label="Slide 1">
+      <div class="frame">
+        <div class="content">
+          <div class="kicker">Slide 7</div>
+          <h1>Model training</h1>
+          <p>
+            <ul>
+              <li>Our training data is available in 3 periods (2015, 2018, 2021).</li>
+              <li>We simulated the training data to previous year.</li>
+            </ul>
+          </p>
+
+          <figure style="margin-left: auto; margin-right: auto; text-align: center;">
+                <img src="src/wet_4.jpg"  style="width: 900px; height: 500px;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" aria-label="Slide 1">
+      <div class="frame">
+        <div class="content">
+          <div class="kicker">Slide 8</div>
+          <h1 style="margin-left: auto; margin-right: auto; text-align: center;">Preliminary result (1)</h1>
+          <figure style="margin-left: auto; margin-right: auto; text-align: center;">
+                <img src="src/wet_5.jpg"  style="width: 1000px; height: 550px;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" aria-label="Slide 1">
+      <div class="frame">
+        <div class="content">
+          <div class="kicker">Slide 9</div>
+          <h1 style="margin-left: auto; margin-right: auto; text-align: center;">Preliminary result (2)</h1>
+          <figure style="margin-left: auto; margin-right: auto; text-align: center;">
+                <img src="src/wet_6.jpg"  style="width: 1000px; height: 550px;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" aria-label="Slide 1">
+      <div class="frame">
+        <div class="content">
+          <div class="kicker">Slide 10</div>
+          <h1 style="margin-left: auto; margin-right: auto; text-align: center;">Preliminary result (3)</h1>
+          <figure style="margin-left: auto; margin-right: auto; text-align: center;">
+                <img src="src/wet_7.jpg"  style="width: 1000px; height: 550px;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
   </main>
 </body>
 </html>
